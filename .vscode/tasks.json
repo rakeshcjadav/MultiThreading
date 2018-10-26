@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "mkdir -p debug\ncd debug\ng++ -std=c++11 -g ./../main.cpp -lpthread -o test.out",
+            "command": "mkdir -p debug\ncd debug\ng++ -std=c++11 -g ./../main.cpp -lgtest -lpthread -o test.out",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -19,7 +19,7 @@
             "command": "rm -f ${workspaceFolder}/debug/*",
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             },
             "problemMatcher": []
         }
